@@ -1,0 +1,12 @@
+{
+  "name": "alstudio",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm --prefix apps/web run dev\" \"npm --prefix apps/api run dev\"",
+    "build": "npm --prefix apps/web run build",
+    "install:all": "npm install && npm --prefix apps/web install && npm --prefix apps/api install"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
