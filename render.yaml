@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: alstudio-api
+    runtime: node
+    rootDir: apps/api
+    buildCommand: npm install
+    startCommand: npm run dev
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: CLIENT_URL
+        sync: false
